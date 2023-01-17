@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="sursa"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro 0733224411 qui earum reiciendis nemo,
+        optio modi quam ipsam incidunt libero +4 0783283810 excepturi 0744444444 beatae dolore,0040722222222
+        vel  0777 777 777 adipisci cupiditate totam voluptatibus? Quae, eius odio.</p>
+        <p id="destinatie"></p>
+        <script>
+            let sursa= document.getElementById('sursa').innerHTML;
+            console.log(sursa);
+            let pattern=/[\+]?[0-9\s]{10,16}/g;
+            let result= sursa.match(pattern);
+            document.getElementById("destinatie").innerHTML=result;
+
+        </script>
+</body>
+</html>
